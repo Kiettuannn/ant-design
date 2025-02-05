@@ -1,0 +1,32 @@
+{
+  "book-room": [
+    {
+      "id": "6b49",
+      "time": "14 hour",
+      "fullName": "Vo Tuan Kiet",
+      "phone": "0979318410",
+      "email": "23520826@gm.uit.edu.vn",
+      "services": [
+        "Buffet"
+      ],
+      "date": [
+        "28/02/2025",
+        "19/03/2025"
+      ]
+    },
+    {
+      "id": "5a4a",
+      "time": "14 hour",
+      "fullName": "Vo Tuan Kiet",
+      "phone": "0979318410",
+      "email": "23520826@gm.uit.edu.vn",
+      "services": [
+        "Buffet"
+      ],
+      "date": [
+        "28/02/2025",
+        "19/03/2025"
+      ]
+    }
+  ]
+}

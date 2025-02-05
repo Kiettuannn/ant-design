@@ -1,0 +1,32 @@
+.notify{
+  &__dropdown{
+    min-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    &--title{
+      font-size: 20px;
+    }
+    &--viewAll{
+      font-size: 20px;
+    }
+  }
+  &__body{
+    max-height: 200px;
+    overflow-y: auto;
+
+    border-top: 1px solid #ddd;
+    .ant-dropdown-menu{
+      box-shadow: none;
+    }
+  }
+}
+.Button-notify{
+  font-size: 30px;
+}
