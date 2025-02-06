@@ -1,5 +1,7 @@
 import { Menu } from 'antd';
-import { DashboardOutlined,CustomerServiceOutlined, AppstoreOutlined} from "@ant-design/icons"
+import { DashboardOutlined,CustomerServiceOutlined, AppstoreOutlined,
+  PlusCircleOutlined
+} from "@ant-design/icons"
 import { Link } from 'react-router-dom';
 import "./MenuBar.scss"
 const items = [
@@ -40,14 +42,18 @@ const items = [
     }} />,
     children :[
       {
-        key: "/create-room",
-        label: <Link className="menu__sub-item" to="/create-room">Create room</Link>
+        key: "/all-room",
+        label: <Link className="menu__sub-item" to="/all-room">Room list</Link>
       }
     ],
     key: 3
   },
   {
-    label: "Menu 4"
+    label: <Link to="/create-room">Create room</Link>,
+    icon:<PlusCircleOutlined style={{
+      fontSize: 20
+    }} />,
+    key: 4
   },
   {
     label: "Menu 5"

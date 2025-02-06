@@ -37,14 +37,14 @@ function LayoutDefault() {
           </div>
         </header>
         <Layout className="body">
-          <Sider collapsible collapsed={collapse} width="20%" className={`body__sider${collapse ? '--collapsed' : ''}`}>
+          <Sider  collapsed={collapse} width="20%" className={`body__sider${collapse ? '--collapsed' : ''}`}>
             <MenuBar/>
           </Sider>
           <Content className="body__content" >
             <Outlet />
           </Content>
         </Layout>
-        <Footer className="footer" >Footer</Footer>
+        <Footer className="footer" >Copy right @KietKlat</Footer>
       </Layout>
     </>
   )

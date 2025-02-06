@@ -1,47 +1,50 @@
-.header{
+.header {
   display: flex;
   border-bottom: 1px solid lightgray;
   align-items: center;
 
-  &__logo{
+  &__logo {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    img{
+    img {
       width: 170px;
       height: auto;
       object-fit: cover;
     }
 
-    &--collapsed{
+    &--collapsed {
       width: 80px;
 
-      img{
+      img {
         width: 80px;
         height: 80px;
         object-fit: cover;
       }
     }
   }
-  &__nav{
+
+  &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1;
 
-    &__left{
+    &__left {
       display: flex;
       font-size: 25px;
       padding-left: 40px;
 
     }
-    &__right{
+
+    &__right {
       margin-right: 40px;
     }
   }
-  &__collapse{
+
+  &__collapse {
     margin-right: 30px;
     font-size: 30px;
     background-color: transparent;
@@ -49,24 +52,34 @@
   }
 }
 
-.body{
-  .ant-layout-sider-trigger{
-    background-color: #fff;
-  }
-  &__sider{
+.body {
+  flex: 1 0 auto;
+
+  &__sider {
     width: 80px;
     background-color: #fff;
 
-    &--collapsed{
+    &--collapsed {
       background-color: #fff;
     }
-    
+
   }
-  &__content{
+
+  &__content {
     padding: 40px;
   }
 }
 
-.footer{
+.footer {
+  color: #fff;
   text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: navy;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }

@@ -1,4 +1,4 @@
-import { Dropdown } from "antd";
+import { Badge, Dropdown } from "antd";
 import { BellOutlined } from "@ant-design/icons";
 import { Button } from 'antd';
 import "./Notify.scss"
@@ -74,7 +74,9 @@ function Notify(){
             </div>
           </>
         )}>
-        <Button type="text" icon={<BellOutlined/>} className="Button-notify"></Button>
+          <Badge dot>
+            <Button type="text" icon={<BellOutlined/>} className="Button-notify"></Button>
+          </Badge>
       </Dropdown>
     </>
   )

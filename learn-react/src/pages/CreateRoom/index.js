@@ -1,9 +1,22 @@
 import { Button, Form, Input, InputNumber, Select, Switch } from "antd";
+import { createRoom } from "../../services/roomServices";
+
 const {Option} = Select;
 function CreateRoom() {
-  const handleSubmit = (e) => {
-    console.log(e);
+
+  const [form] = Form.useForm();
+
+  const handleSubmit = async (value) => {
+    const response = await createRoom(value);
+    if(response){
+      alert("Create room successfully!");
+      form.resetFields();
+    }
+    else{
+      alert("Please create later!");
+    }
   }
+
 
   const rules = [{
     required: true,
@@ -13,7 +26,7 @@ function CreateRoom() {
   return (
     <>
       <h2>Create new room</h2>
-      <Form layout="vertical" name="create-room" onFinish={handleSubmit}>
+      <Form layout="vertical" name="create-room" onFinish={handleSubmit} form={form}>
 
         <Form.Item
           label="Name"
@@ -44,7 +57,7 @@ function CreateRoom() {
         </Form.Item>
 
         <Form.Item
-          label="services"
+          label="Services"
           name="services"
           rules={rules}>
           <Select mode="multiple" allowClear style={{

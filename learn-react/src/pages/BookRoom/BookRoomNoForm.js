@@ -1,6 +1,6 @@
 import { Input, Row, Col, Button, Checkbox, Space,DatePicker, Select } from "antd";
 import { useState } from "react";
-import { bookRoom } from "../../services/bookRoomServices";
+import { bookRoom } from "../../services/roomServices";
 const { RangePicker } = DatePicker;
 function BookRoomNoForm(){
 
